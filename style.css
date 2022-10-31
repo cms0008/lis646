@@ -12,6 +12,7 @@ h1, h2 {
 
 h1 {
     font-size: 2em;
+    text-align: center;
 }
 
 p, li, nav {
@@ -39,12 +40,36 @@ img {
     padding-bottom: 25px;
 }
 
-nav {
-    position:absolute;
-    position:fixed;
-    padding:1%;
-    background-color: #91c6ee;
-    top: 1em;
-    right: 1em;
-    text-align: center;
+
+
+.item1 { 
+    grid-area: header;
+    padding: 0px 0 0; 
 }
+
+.item2 { 
+    grid-area: menu;
+    padding: 20px;
+    text-align:center;
+    background-color: #afebff;
+}
+
+.item3 { 
+    grid-area: main; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  gap: 20px;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
