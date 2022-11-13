@@ -49,7 +49,7 @@ img {
 
 .item2 { 
     grid-area: menu;
-    padding: 20px;
+    padding: 10px;
     text-align:center;
     background-color: #afebff;
 }
@@ -62,8 +62,8 @@ img {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main main main'
-    'menu main main main main main';
+    'menu menu menu menu menu menu'
+    'main main main main main main';
   gap: 20px;
   background-color: #FFFFFF;
   padding: 10px;
